@@ -1,0 +1,120 @@
+p {
+	color:blue;
+}
+
+#background {
+	background-color:red;
+}
+
+#button {
+	width:100px;
+	height:20px;
+	color:white;
+	background-color:black;
+	border-radius:15px;
+}
+
+header {
+	height:250px;
+	width:99%;
+	border:2px solid black;
+	background-color: #FF9933;
+	margin-bottom:15px;
+}
+
+footer {
+	height:250px;
+	width:99%;
+	border:2px solid black;
+	background-color:#aef880;
+	margin-top:15;
+}
+
+.llama {
+	height:160px;
+	width:500px;
+}
+
+.wrap-trivia {
+	height:250px;
+	width:450px;
+	border:5px double yellow;
+	padding:15px;
+}
+
+.wrap-list {
+	height:100px;
+	width:450px;
+	border:5px dashed green;
+	padding:15px;
+}
+
+#one{
+	 position: absolute;
+	height: 150px;
+	width: 150px;
+	background-color: red;
+	display: inline-block;
+	 z-index: 1;
+}
+
+#two{
+	 position: fixed;
+	height: 150px;
+	width: 150px;
+	background-color: blue;
+	display: inline-block;
+	 z-index: 2;
+	 left: 25%;
+}
+
+#three{
+	position: absolute;
+	height: 150px;
+	width: 150px;
+	background-color: green;
+	display: inline-block;
+}
+
+#body {
+	position: relative;
+	height: 2048px;
+	top: 750px;
+}
+
+.navitem {
+	list-style-type:none;
+	display:inline;
+	padding-right:1.5em;
+}
+
+#navmenu {
+	width:250px;
+	height:30px;
+	margin:auto;
+}
+
+a:link{
+	color:green;
+}
+
+a:visited{
+	color:blue;
+}
+
+a:hover{
+	color:purple;
+}
+
+a:active{
+	color:orange;
+}
+
+#right{
+	float:right;
+	width:200;
+}
+
+#left{
+	width:200;
+}
