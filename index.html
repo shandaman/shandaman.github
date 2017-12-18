@@ -1,0 +1,98 @@
+# shandaman.github<!DOCTYPE html>
+	<html> 
+		<head>
+			<link type="text/css" rel="stylesheet" href="main.css" />
+			<title>Llama Homepage</title>
+			<script>
+				function banner(){ 
+					var text = confirm("Did You Really Want to Click on My Banner?"); 
+					return text; 
+				}
+				function answer(){ 
+					var radio = document.getElementsByName("trivia");
+					var selection = false;
+					var message = "You Suck";
+					for( var i = 0; i < radio.length; i++) {
+					if(radio[i].value == "kcr" && radio[i].checked == true) { 
+					selection = true; 
+					} //end if statement 
+					} //end for loop
+					if(selection == true) {
+					message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+					} else { 
+					message = message + "<b><p style='color:red'>Try again my friend.</p></b>";
+					}
+					document.getElementById("response").innerHTML = message;
+				} //end function answer
+			</script>
+		</head> 
+		<body id="background"> 
+			<a href="http://bing.com" onclick="return banner()"> 
+				<header>
+					<center>
+						<h1>Llamas</h1>
+						<img class="llama" src="https://image.freepik.com/free-photo/lama_2676511.jpg"/>
+					</center>
+				</header>
+			</a>
+			<nav>
+				<ul id="navmenu">
+					<li class="navitem"><a href="survive.html">Survive</a></li>
+					<li class="navitem"><a href="fish.html">Fish</a></li>
+					<li class="navitem"><a href="pong.html">Pong</a></li>
+				</ul>
+			</nav>
+			<div id="right">
+				<ol>
+					<li>Llamas are wierd
+					<li>Llamas are fat
+					<li>Cats are cooler
+				</ol>
+			</div>
+			<div id="left">
+				<ol>
+					<li>Llamas are mean
+					<li>Llamas are ugly
+					<li>Dogs are cooler
+				</ol>
+			</div>
+			<h1>Llama Center</h1>
+			<p>
+				In this <i>website</i>, we will learn about the <b>amazing</b> <u>llamas</u>. 
+			</p>
+			<div class="wrap-list">	
+				<ol>
+					<li>Llamas are amazing
+					<li>Llamas are cool
+					<li>Llamas are great
+				</ol>
+			</div>
+			<div class="wrap-trivia">
+				<h2>Llama Trivia Question:</h2>
+				<p>Why do llamas spit at you?</p>
+				<form>
+					<div id="response"> </div>
+					<input type="radio" name="Trivia" value="No"> For Pleasure<br>
+					<input type="radio" name="Trivia" value="No"> When Tired <br>
+					<input type="radio" name="Trivia" value="Yes"> Displeasure or irritation <br>
+					<input type="radio" name="Trivia" value="No"> They make too much saliva <br> 
+					<input type="button" id="submit" value="Click Here" onclick="answer()">
+					<input type="button" value="Click Here" id="button">
+				</form>
+			</div>
+
+			<audio width="400" height="220" controls autoplay>
+			<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+			Your browser does not support HTML 5 audio.
+			</audio>
+
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Llama_lying_down.jpg/1200px-Llama_lying_down.jpg" />
+
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Domestic_llama_%282009-05-19%29.jpg/220px-Domestic_llama_%282009-05-19%29.jpg" />
+			<hr>
+			<center> Shannon Fifield <a href="http://www.coolmath-games.com/">My Favorite Website</a> </center>
+			<footer> 
+
+			</footer>
+		</body> 
+	</html>
